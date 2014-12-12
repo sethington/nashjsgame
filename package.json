@@ -1,0 +1,36 @@
+{
+  "name": "nashjsgame",
+  "version": "0.0.1",
+  "description": "NashJS GameDev Class Scaffold",
+  "dependencies": {
+    "browserify": "^6.3.4",
+    "chai": "^1.10.0",
+    "glob": "^4.3.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-test": "^0.12.4",
+    "grunt-shell": "^1.1.1",
+    "load-grunt-tasks": "^0.6.0",
+    "lodash": "^2.4.1",
+    "sinon": "^1.12.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/egdelwonk/nashjsgame"
+  },
+  "keywords": [
+    "nashjsgame"
+  ],
+  "author": "William Golden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/egdelwonk/nashjsgame/issues"
+  },
+  "homepage": "https://github.com/egdelwonk/nashjsgame"
+}

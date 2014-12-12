@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="48" tilewidth="32" tileheight="32" backgroundcolor="#000000">
+ <tileset firstgid="1" name="tiles" tilewidth="32" tileheight="32">
+  <image source="level.png" width="160" height="32"/>
+ </tileset>
+ <layer name="background" width="64" height="48">
+  <data encoding="base64" compression="zlib">
+   eJztme0KgzAMRYub7//KY8hAZKVJk7T5uAfuz6mnTROHZ2vtLJ6qwB/+8K8L/K+8nYWD5D4//5ezcJDcB/UP/wj+0h7RI4q/FVn9qXNF03/H7OtBnSua/itmn/Z6Za1/Knd/izr0DvY/pr9WH4jqrwX84U/x3/kuw30uDlT/Ff/jd6ynp/rXXk8Knvx3sNrfqp5nz8rq72LW9czl63h0UuFcwD+XP7cP3P255z/DN/in/+xvpcngX33/PfULah/I6k+F4/+vZjn17xGuf7T+NsK7v7SGRn0ggn/vfGkQyX/Ua6TXp8xoif9spNen+meM5Z4iCBI/H3HHDIU=
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object name="player" type="player" x="96" y="480" width="32" height="32">
+   <properties>
+    <property name="components" value="[PlayerGraphicsComponent]"/>
+   </properties>
+  </object>
+  <object name="monster" type="monster" x="64" y="192" width="32" height="32">
+   <properties>
+    <property name="maxdx" value="10"/>
+    <property name="right" value="true"/>
+   </properties>
+  </object>
+  <object name="monster" type="monster" x="1120" y="416" width="32" height="32">
+   <properties>
+    <property name="left" value="true"/>
+    <property name="maxdx" value="4"/>
+   </properties>
+  </object>
+  <object name="monster" type="monster" x="1632" y="832" width="32" height="32">
+   <properties>
+    <property name="left" value="true"/>
+    <property name="maxdx" value="4"/>
+   </properties>
+  </object>
+  <object name="monster" type="monster" x="1056" y="1312" width="32" height="32">
+   <properties>
+    <property name="maxdx" value="6"/>
+    <property name="right" value="true"/>
+   </properties>
+  </object>
+  <object name="monster" type="monster" x="640" y="992" width="32" height="32">
+   <properties>
+    <property name="left" value="true"/>
+    <property name="maxdx" value="4"/>
+   </properties>
+  </object>
+  <object name="treasure" type="treasure" x="192" y="864" width="32" height="32"/>
+  <object name="treasure" type="treasure" x="96" y="1312" width="32" height="32"/>
+  <object name="treasure" type="treasure" x="1856" y="384" width="32" height="32"/>
+  <object name="treasure" type="treasure" x="704" y="416" width="32" height="32"/>
+  <object name="treasure" type="treasure" x="1984" y="192" width="32" height="32"/>
+  <object name="treasure" type="treasure" x="608" y="1152" width="32" height="32"/>
+  <object name="monster" type="monster" x="1216" y="736" width="32" height="32">
+   <properties>
+    <property name="maxdx" value="10"/>
+    <property name="right" value="true"/>
+   </properties>
+  </object>
+  <object name="monster" type="monster" x="1856" y="1344" width="32" height="32">
+   <properties>
+    <property name="maxdx" value="10"/>
+    <property name="right" value="true"/>
+   </properties>
+  </object>
+  <object name="monster" type="monster" x="1024" y="192" width="32" height="32">
+   <properties>
+    <property name="left" value="true"/>
+    <property name="maxdx" value="4"/>
+   </properties>
+  </object>
+  <object name="treasure" type="treasure" x="32" y="192" width="32" height="32"/>
+  <object name="treasure" type="treasure" x="1984" y="1344" width="32" height="32"/>
+ </objectgroup>
+</map>
