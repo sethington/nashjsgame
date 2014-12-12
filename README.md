@@ -14,3 +14,9 @@
 
 JS unit tests are written in the `public/js/test/` directory. Try to make
 the file structure match that of the `public/js/` directory.
+
+### Running the Game
+
+1. Run `grunt shell:browserify`
+2. Then `python -m SimpleHTTPServer 8081`
+3. Goto `http://localhost:8081/public/` in a web browser
