@@ -6,21 +6,28 @@ var Entity = Class.extend({
         this.engine    = engine;
         this.components = components;
 
-        this.x         = obj.x;
-        this.y         = obj.y;
-        this.dx        = 0;
-        this.dy        = 0;
-        this.gravity   = 32 * (obj.properties.gravity || 9.8 * 6);
-        this.maxdx     = 32 * (obj.properties.maxdx   || 15);
-        this.maxdy     = 32 * (obj.properties.maxdy   || 60);
-        this.impulse   = 32 * (obj.properties.impulse || 1500);
-        this.accel     = this.maxdx / (obj.properties.accel    || 1/2);
-        this.friction  = this.maxdx / (obj.properties.friction || 1/6);
-        this.type      = obj.type;
-        this.left      = obj.properties.left;
-        this.right     = obj.properties.right;
-        this.start     = { x: obj.x, y: obj.y }
-        this.killed    = 0;
+        if(obj){
+
+            this.x = obj.x;
+            this.y = obj.y;
+            this.type = obj.type;
+            this.gravity = 32 * (obj.properties.gravity || 9.8 * 6);
+            this.maxdx = 32 * (obj.properties.maxdx   || 15);
+            this.maxdy = 32 * (obj.properties.maxdy   || 60);
+            this.impulse = 32 * (obj.properties.impulse || 1500);
+
+            this.accel = this.maxdx / (obj.properties.accel    || 1/2);
+            this.friction = this.maxdx / (obj.properties.friction || 1/6);
+
+            this.left = obj.properties.left;
+            this.right = obj.properties.right;
+            this.start = { x: obj.x, y: obj.y };
+        }
+
+        this.dx = 0;
+        this.dy = 0;
+
+        this.killed = 0;
         this.collected = 0;
         
         var self = this;

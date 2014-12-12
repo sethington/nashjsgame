@@ -5,9 +5,6 @@ var EntityFactory = require('./entity-factory');
 var Level = Entity.extend({
 
     init: function(components, engine, obj){
-        this.engine = engine;
-        this.components = components;
-
         this.COLORS = [
             '#76e461',
             '#895f33',
@@ -15,6 +12,8 @@ var Level = Entity.extend({
             '#30213b',
             '#1a888d'
         ];
+
+        this._parent(components, engine, obj);
     },
 
     setup: function(map) {

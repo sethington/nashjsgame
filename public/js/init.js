@@ -5,11 +5,12 @@ var Game = new Engine({
 });
 
 var Level = require('./game/entities/level');
+var CollectAllTreasure = require('./game/components/collect-all-treasure');
 
 Game.start = function(){
     // should add a scene manager here for loading screens,
     // etc to invoke level load
-    this.level = new Level([], this);
+    this.level = new Level([CollectAllTreasure], this);
     this.level.load('/public/js/game/levels/level', function(){
         Game.run();
     });
