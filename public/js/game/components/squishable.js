@@ -29,6 +29,7 @@ var Squishable = Component.extend({
         player.x = player.start.x;
         player.y = player.start.y;
         player.dx = player.dy = 0;
+        player.perished++;
     }
 });
 

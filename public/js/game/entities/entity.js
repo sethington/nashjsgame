@@ -29,6 +29,7 @@ var Entity = Class.extend({
 
         this.killed = 0;
         this.collected = 0;
+        this.perished = 0;
         
         var self = this;
 

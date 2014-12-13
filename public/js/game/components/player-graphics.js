@@ -18,6 +18,11 @@ var PlayerGraphicsComponent = Component.extend({
         for(n = 0, max = entity.killed ; n < max ; n++) {
             ctx.fillRect(entity.engine.t2p(2 + n), entity.engine.t2p(3), 32/2, 32/2);
         }
+
+        ctx.fillStyle = '#ff0000';
+        for(n = 0, max = entity.perished; n < max ; n++) {
+            ctx.fillRect(entity.engine.t2p(2 + n), entity.engine.t2p(4), 32/2, 32/2);
+        }        
     }
 });
 
