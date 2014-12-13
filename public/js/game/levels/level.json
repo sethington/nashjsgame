@@ -32,6 +32,20 @@
                  "y":480
                 }, 
                 {
+                 "height":128,
+                 "name":"timer",
+                 "properties":
+                    {
+                     "components":"[TimerGraphicsComponent]"
+                    },
+                 "rotation":0,
+                 "type":"timer",
+                 "visible":true,
+                 "width":128,
+                 "x":480,
+                 "y":480
+                },
+                {
                  "height":32,
                  "name":"monster",
                  "properties":

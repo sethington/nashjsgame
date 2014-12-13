@@ -14,6 +14,10 @@ Game.start = function(){
     this.level.load('/public/js/game/levels/level', function(){
         Game.run();
     });
+
+    this.timeStarted = Date.now();
+    this.timeFinished = this.timeStarted;
+    this.playing = true;
 };
 
 Game.tick = function(step){
@@ -30,6 +34,20 @@ Game.render = function(ctx, delta){
             entity.render(ctx, delta);
         });
     }
+};
+
+Game.endGame = function(){
+    if (this.playing){
+        this.playing = false;
+        this.timeFinished = Date.now();
+    }
+};
+
+Game.calcGameTime = function(){
+    if (!this.playing){
+        return (this.timeFinished-this.timeStarted) / 1000;
+    }
+    return (Date.now() - this.timeStarted) / 1000;
 };
 
 Game.start();

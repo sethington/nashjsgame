@@ -9,6 +9,7 @@ var CollectAllTreasure = Component.extend({
         if (player.collected === treasure.length){
             // emit a message that all of the treasure was collected
             // possibly load a new level
+            window.Game.endGame();
         }
     }
 });

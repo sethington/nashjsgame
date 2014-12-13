@@ -9,13 +9,15 @@ var SquishableComponent = require('../components/squishable');
 var Collectible = require('../components/collectible');
 var MonsterGraphicsComponent = require('../components/monster-graphics');
 var TreasureGraphicsComponent = require('../components/treasure-graphics');
+var TimerGraphicsComponent = require('../components/timer-graphics');
 
 
 var EntityFactory = function(){
     this.entityTypes = {
         player: [PlayerInputComponent, PlayerGraphicsComponent],
         monster: [SquishableComponent, MonsterGraphicsComponent],
-        treasure: [Collectible, TreasureGraphicsComponent]
+        treasure: [Collectible, TreasureGraphicsComponent],
+        timer: [TimerGraphicsComponent]
     }
 };
 
